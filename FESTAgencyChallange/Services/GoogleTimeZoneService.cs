@@ -12,6 +12,9 @@ using Newtonsoft.Json;
 
 namespace FESTAgencyChallange.Services
 {
+    /// <summary>
+    /// Implementation of ITimeZoneService. For more inforamtion visit: https://developers.google.com/maps/documentation/timezone/start
+    /// </summary>
     public class GoogleTimeZoneService : ITimeZoneService
     {
         private readonly HttpClient _httpClient;

@@ -8,6 +8,9 @@ using Newtonsoft.Json;
 
 namespace FESTAgencyChallange.Services
 {
+    /// <summary>
+    /// Implementation of IWeatherInfoService. For more information visit: https://openweathermap.org/api && https://openweathermap.org/current
+    /// </summary>
     public class OpenWeatherMapService : IWeatherInfoService
     {
         private readonly HttpClient _httpClient;

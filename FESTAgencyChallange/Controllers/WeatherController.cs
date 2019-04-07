@@ -29,7 +29,7 @@ namespace FESTAgencyChallange.Controllers
             var unixTimestamp = (int)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
             var timeZoneResult = await this._timeZoneService.GetTimeZone(weatherInfoResult.coord.lat,
                                                                          weatherInfoResult.coord.lon, unixTimestamp);
-            if (weatherInfoResult != null)
+            if (weatherInfoResult != null && timeZoneResult.Status == "OK")
             {
                 var time = DateTimeExtensions.GetDateTimeFromUnixTimeStamp(unixTimestamp + timeZoneResult.DstOffset +
                                                                             timeZoneResult.RawOffset);

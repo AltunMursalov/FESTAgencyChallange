@@ -24,14 +24,17 @@ namespace FESTAgencyChallange
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
+            #region InitConfigurationsFromAppSettings
             services.Configure<OpenWeatherMapSettings>(
                 this.Configuration.GetSection("OpenWeatherMapServiceCredentials"));
-
             services.Configure<GoogleTimeZoneSettings>(
                 this.Configuration.GetSection("GoogleTimeZoneServiceCredentials"));
+            #endregion
 
+            #region Services IoC Registering
             services.AddTransient<IWeatherInfoService, OpenWeatherMapService>();
             services.AddTransient<ITimeZoneService, GoogleTimeZoneService>();
+            #endregion
 
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
