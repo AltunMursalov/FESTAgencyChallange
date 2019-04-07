@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FESTAgencyChallange", "FESTAgencyChallange\FESTAgencyChallange.csproj", "{96F17471-8824-4F63-9EDF-FE9E97844917}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96F17471-8824-4F63-9EDF-FE9E97844917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96F17471-8824-4F63-9EDF-FE9E97844917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96F17471-8824-4F63-9EDF-FE9E97844917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96F17471-8824-4F63-9EDF-FE9E97844917}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D36FE7C-DCFD-4CB8-91A3-AF5970A9FA10}
+	EndGlobalSection
+EndGlobal
