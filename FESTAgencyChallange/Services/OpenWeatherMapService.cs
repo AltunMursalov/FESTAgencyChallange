@@ -28,7 +28,7 @@ namespace FESTAgencyChallange.Services
 
         public async Task<DataTransferObjects.WeatherInfoResult.RootObject> GetInfoByZipCode(string zipCode, bool isMetric)
         {
-            var url = $"weather?zip={zipCode}&APPID={this._openWeatherMapSettings.ApiKey}";
+            var url = $"weather?zip={zipCode}&APPID={this._openWeatherMapSettings.ApiKey}&units=imperial";
             if (isMetric)
                 url += $"&units=metric";
             var response = await this._httpClient.GetAsync(url);
